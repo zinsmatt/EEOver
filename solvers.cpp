@@ -1709,6 +1709,8 @@ double ellipse_ellipse_overlap_netlibs (double PHI_1, double A1, double B1,
      } //switch
 }
 
+
+
 //===========================================================================
 //-- CACM Algorithm 326: Roots of low order polynomials.
 //-- Nonweiler, Terence R.F., CACM Algorithm 326: Roots of low order 
