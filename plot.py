@@ -95,8 +95,8 @@ for Id in ids:
 
     pylab.gca().add_patch(cir)
     pylab.axis('scaled')
-    pylab.title(r"$%d,\; A_1= %.3f,\; A_2= %.3f,\;A_{12}= %.3f,\; \epsilon=%.3f$"%(
-        index, area[1], area[2], area[3], area[5]))
+    pylab.title(r"$%d,\; A_1= %.3f,\; A_2= %.3f,\;A_{12}= %.3f,\; \epsilon=%.3f\; IoU=%.4f$"%(
+        index, area[1], area[2], area[3], area[5], area[3]/(area[1]+area[2]-area[3])))
 
     pylab.grid()
 
