@@ -1,4 +1,22 @@
-[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://raw.githubusercontent.com/chraibi/EEOver/master/LICENSE)  [![Build Status](https://travis-ci.org/chraibi/EEOver.svg?branch=master)](https://travis-ci.org/chraibi/EEOver)  [![codecov.io](https://codecov.io/github/chraibi/EEOver/coverage.svg?branch=master)](https://codecov.io/github/chraibi/EEOver?branch=master) [![Twitter](https://img.shields.io/twitter/url/https/github.com/chraibi/EEOver.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D) 
+[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://raw.githubusercontent.com/chraibi/EEOver/master/LICENSE) 
+
+# Custom changes
+- Create a Python module **ellipses_iou** with pybind11.
+- Use CMake.
+- The best function to use is ```compute_iou_toms```. It uses the netlibs solver, or BOOST polygons method if the solver fails.
+- Otherwise ```compute_iou_gsl``` seems also good, but ```compute_iou_gems``` is quite bad.
+
+## Usage
+Clone the repository with submodules, and then build and install the python module with pip.
+```
+git clone --recursive git@github.com:zinsmatt/EEOver.git
+pip install ./EEOver
+```
+
+
+
+
+
 
 ## Ellipse-Ellipse overlap area:
 This program calculates the overlapping area of two arbitrary ellipses. It implements
