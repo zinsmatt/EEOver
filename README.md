@@ -13,6 +13,10 @@ git clone --recursive git@github.com:zinsmatt/EEOver.git
 pip install ./EEOver
 ```
 
+If needed install libgsl
+```
+sudo apt-get install libgsl-dev
+```
 
 
 
